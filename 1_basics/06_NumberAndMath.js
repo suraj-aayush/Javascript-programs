@@ -50,3 +50,4 @@ console.log(rand * (maxi - mini + 1));
 console.log( Math.floor(rand * (maxi - mini + 1)) );
 const myValue =  Math.floor(rand * (maxi - mini + 1)) + mini 
 console.log(myValue);
+
