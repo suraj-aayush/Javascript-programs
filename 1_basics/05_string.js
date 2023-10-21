@@ -30,3 +30,19 @@ console.log(spaceString);
 console.log(spaceString.trim());      // trim the extra space from beginning and ending
 
 console.log(example.slice(0,3))
+
+
+// REPLACE FUNCTION
+
+const url = "https://www.aayushkumar%20store.com"
+console.log(url.replace('%20','-'))
+
+// if a char or string is present or not -->
+
+console.log(url.includes('kumar'));  // present ... true
+console.log(url.includes('singh'));  // not present ... false
+
+// SEPARATOR... separates on basis of a char
+
+const sentence = "The quick brown fox jumps over the dog"
+console.log(sentence.split(" "));  // returns an array with all the characters
