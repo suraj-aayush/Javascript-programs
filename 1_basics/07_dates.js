@@ -1,9 +1,23 @@
 const myDate = new Date()
 console.log(myDate);
+// to get normal months i.e 1-> jan, 2->feb... and so on
+// we can add 1....  console.log(`current month is ${myDate.getMonth() +1}, where 1 is jan, 2 is feb and so on`);
+console.log(`current month is ${myDate.getMonth()}, where 0 is jan, 1 is feb and so on`);
+
+console.log(`current date is ${myDate.getDate()}`);
+console.log(`current year is ${myDate.getFullYear()}`);
 console.log(myDate.toString());
 console.log(myDate.toLocaleDateString());
 console.log(myDate.toISOString());
 console.log(myDate.toJSON());
+// we can define the properties, like which timezone we want, weekday, etc
+const temp = myDate.toLocaleString('default',{
+    month :"2-digit",
+    weekday:"long",
+    year:"2-digit"
+})
+console.log("==> new method ");
+console.log(temp);
 
 //
 console.log("\nsecond method\n");
