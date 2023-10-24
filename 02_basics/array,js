@@ -1,0 +1,44 @@
+const arr = [1,-8,29,4,54,76]       // method 1 to initialize
+console.log(arr[2]);
+
+const name = new Array("ak", "sk", "uk", "pk")  // method 2 to initialize
+console.log(name[1]);
+
+// array operations 
+console.log(name);
+
+arr.push(7348)
+console.log(arr);
+
+arr.pop()
+console.log(arr);
+
+console.log(arr.sort());
+
+arr.unshift(6666)
+console.log(arr);
+
+arr.shift()
+console.log(arr);
+
+console.log(arr.includes(-777));
+
+console.log(arr.indexOf(54));
+
+// join ..> converts into string
+
+const str = arr.join()
+console.log(typeof(str));
+console.log(str);
+
+console.log("original arr -> ", arr);
+
+// SLICE -> NEW ARRAY WILL HAVE ELEMENTS from ( starting specified index to ending - 1  )
+
+const myn1 = arr.slice(1,4)  // index... 1 2 3  ka element..  1 to n-1
+console.log("\nslice array",myn1);
+console.log(arr);
+
+const sp = arr.splice(1,4)
+console.log("\n original array after splice .. removed the splice elements from original array ", arr);
+console.log("splice array is => ",sp);
