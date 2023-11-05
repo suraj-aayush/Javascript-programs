@@ -73,3 +73,4 @@ console.log( Object.values(keyObj) );
 // TO CHECK IF AN ELEMENT IS PRESENT IN THE OBJECT OR NOT
 
 console.log(keyObj.hasOwnProperty('name'));  // works for keys
+
