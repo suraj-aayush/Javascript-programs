@@ -23,7 +23,7 @@ console.log(arr);
 
 console.log(arr.includes(-777));
 
-console.log(arr.indexOf(54));
+// console.log(arr.indexOf(54));
 
 // join ..> converts into string
 
