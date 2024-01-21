@@ -1,4 +1,14 @@
 /*
+    ALL DOM SELECTORS
+
+    1. geElemenetById() 
+    2. getElementByClassName() -> reutrns a HTML Collection
+    3. querySelector()         -> returns the first matched elment
+    4. querySelectorAll()      -> returns the whole matched element in nodeList         
+*/
+
+
+/*
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,6 +44,13 @@
     <li>day2</li>
     <li>day3</li>
     <li>day4</li>
+</ol>
+
+<ol>
+    <li>mon</li>
+    <li>tue</li>
+    <li>wed</li>
+    <li>thu</li>
 </ol>
 
 </body>
@@ -101,3 +118,28 @@ firstLI.style.backgroundColor = "green"
 
 irstLI.innerText="My day 1"         // CHANGING TEXT OF THE ITEM
 'My day 1'
+
+//////////////  querySelector -> reutrns the first elemnet only 
+/////////////   querySelectorAll -> reutrns the nodelist of all the matched element set
+
+
+/*
+    suppose we have multiple ol lists and we want to select
+     2nd ol -> 2nd li 
+
+     then use querySelectorAll('ol') -> to select all ol elements
+     then select the 2nd one using array index... AllOL[1]
+     now we have the 2nd ol
+
+     now to select the 2nd listed item 
+     we use ->  secondOL.querySelectorAll('li')[1]
+*/
+
+const AllOl = document.querySelectorAll('ol')
+undefined
+const secondOL = AllOl[1]
+undefined
+const FirstLine = secondOL.querySelectorAll('li')[0]
+undefined
+const SecondLine = secondOL.querySelectorAll('li')[1]
+undefined
