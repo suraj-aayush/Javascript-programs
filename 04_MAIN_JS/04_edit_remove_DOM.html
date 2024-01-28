@@ -13,6 +13,7 @@
 
 <script>
 
+// 1 HR 35 MIN... CHAI AUR CODE, PART 2 JS // imp
 // DEFINING A FUNCTION TO ADD LANGUAGES ... js ,c , c++, python
     function addLang(lang)
     {
@@ -21,8 +22,42 @@
         document.querySelector('.language').appendChild(myli);
     }
 
+    function addUsingAppendChild(lang)
+    {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(lang));
+        document.querySelector('.language').appendChild(li)
+    }
+
 addLang("pyhton")
 addLang("C++")
+addUsingAppendChild('TYPESCRIPT')
+
+// EDITING ELEMENTS
+
+const secondLang = document.querySelector("li:nth-child(2)")
+// secondLang.innerHTML = "MOJO"  .... -> THIS IS NOT A BETTER APPROACH TO CHANGE THE VALUES BECAUSE WE NEED TO TRAVERSE ENTIRE THING AGAIN
+//  USING OPTIMISED APPROACH
+
+const newLi = document.createElement('li') // new element bnaao, aur usko replace kr do selected element se (here it is -> secondLang)
+newLi.textContent = " MOJO "
+secondLang.replaceWith(newLi);
+
+// ANOTHER METHOD FOR EDITING 
+// changing JAVASCRIPT TO RUBY
+
+const changeJS = document.querySelector('li:nth-child(1)');
+changeJS.innerHTML = " RUBY "
+
+const newEle = document.createElement('li')
+newEle.innerHTML = " ruby "
+changeJS.replaceWith(newEle)
+
+// TO RMEOVE AN ELEMENT
+
+const thirdLang = document.querySelector('li:nth-child(3)')
+thirdLang.remove()
+
 
 </script>
 
