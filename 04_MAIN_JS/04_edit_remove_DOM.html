@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT & REMOVE DOM ELEMENTS</title>
+</head>
+<body style="background-color: #212121; color:azure">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+
+// DEFINING A FUNCTION TO ADD LANGUAGES ... js ,c , c++, python
+    function addLang(lang)
+    {
+        const myli = document.createElement('li');
+        myli.innerHTML = `${lang}`
+        document.querySelector('.language').appendChild(myli);
+    }
+
+addLang("pyhton")
+addLang("C++")
+
+</script>
+
+</html>
