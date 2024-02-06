@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Sixtyfour&display=swap');
+*{
+    margin: 2px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+body{
+    
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    color: antiquewhite;
+}
+
+calculate{
+    border: 10px;
+    border-radius: 4px;
+    color: cyan;
+    background-color: white;
+}
+
+result{
+    color: bisque;
+    border: 3px;
+    border-radius: 5px;
+    
+}
