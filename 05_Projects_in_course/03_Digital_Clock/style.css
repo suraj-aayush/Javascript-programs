@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Sixtyfour&display=swap');
+
+*{
+    margin: 0px;
+    padding: 2px;
+    font-family: 'kanit', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+#banner{
+    align-items: center;
+    justify-content: center;
+    font: 20px;
+    color: bisque;
+    border: 5px solid rgb(77, 71, 71);
+    border-radius: 6px;
+}
+
+#clock{
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(237, 109, 12, 0.9);
+    font-size: large;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
