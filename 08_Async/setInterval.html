@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async function</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+
+////////// START EXAMPLE 1 ///////////
+// const sayDate = function()
+// {
+//     console.log("Hii", Date.now());
+// }
+
+// METHOD 1
+        // setInterval(function(){
+        //     console.log('Stating ', Date.now());
+        // }, 1000)
+
+// METHOD 2
+// const intervalId = setInterval(sayDate, 1000);
+// clearInterval(intervalId);
+/////////// STOP EXAMPLE 1 ///////////
+
+const startBtn = document.getElementById("start");
+const stopBtn = document.getElementById("stop");
+
+let intervalId;
+
+function printName()
+{
+    console.log("AAYUSH 2.0");
+}
+
+startBtn.addEventListener('click', function(e){
+    intervalId = setInterval(printName, 1000);
+})
+
+stopBtn.addEventListener('click', function(e){
+    clearInterval(intervalId);
+})
+
+
+    </script>
+</body>
+</html>

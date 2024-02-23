@@ -4,29 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <script>
-        const sayName = function(){
-            console.log("MY NAME IS PK");
-        }
-
-        const changeText = function(){
-            document.querySelector('h1').innerHTML = 'SAY MY  NAME AFTER 2 SEC '
-        }
-        const setting = setTimeout(changeText, 2000);
-
-        const bt = document.getElementById('btn');
-        bt.addEventListener('click', function(){
-            clearTimeout(setting);  // stops the event of set timeout
-        })
-
-    
-    </script>
-
-
 </head>
 <body>
-    <h1>Async Functions</h1>
-    <button id="btn">Stop</button>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
 </body>
+<script>
+    const sayHitesh = function(){
+        console.log("Hitesh");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+</script>
 </html>
