@@ -7,23 +7,49 @@
     <!-- <link rel="stylesheet" href="style.css" type="text/css"> -->
 
 <!-- INLINE STYLE using @import -->
-    <style>
-        @import url(style.css);
+<!-- @import url(style.css); -->
 
-        @media screen and (max-width:600) {
-            p{
-                color: blue;
-            }
-            body{
-                background-color: brown;
-            }
+<style>
+    @import url(style.css);
+
+    @media screen and (max-width: 600px) {
+        p {
+            color: blue;
         }
-    </style>
+
+        body {
+            background-color: brown;
+        }
+
+        ::marker {
+    color: blue; /* Change marker color */
+    content: "\2022"; /* Unicode character for bullet (•) */
+    font-size: 20px; /* Change marker size */
+    margin-right: 8px; /* Adjust marker position */
+}
+
+        p:hover{
+            color: cyan;
+        }
+
+    }
+
+
+</style>
+
 
 </head>
 <body>
 
+    <ol>
+        <li>abc</li>
+        <li>cba</li>
+    </ol>
     
+    <ul>
+        <li>1212</li>
+        <li>23423</li>
+    </ul>
     
     <h1>Lorem ipsum dolor sit amet.</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur.</p>
