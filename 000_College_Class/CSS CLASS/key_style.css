@@ -1,0 +1,18 @@
+div{
+    color: azure;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation: div1 2s ease-in-out infinite; 
+}
+
+@keyframes div1 {
+    from{
+        top: 20px;
+    }
+    to{
+        top: 205px;
+    }
+}
