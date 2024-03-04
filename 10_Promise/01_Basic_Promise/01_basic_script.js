@@ -22,13 +22,3 @@ new Promise(function(resolve, reject){
    console.log(" 2ND RESOLVED ");
 })
 
-const promiseThree = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        console.log(" \n 3RD PROMISE ");
-        resolve({username:"Aayush", office:"Microsoft"})
-    },1000)
-})
-
-promiseThree.then(function(object){
-    console.log(object);
-})
