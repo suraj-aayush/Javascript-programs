@@ -1,23 +1,19 @@
-
 /////////////////////////////  ASYNC AWAIT /////////////////
-const url = 'https://jsonplaceholder.typicode.com/users'
+const url = "https://jsonplaceholder.typicode.com/users";
 
-
-const new_obj ={
-    username : "AK",
-    umar : 21,
-    aur_sb : " SAB BDHIYA "
+const new_obj = {
+  username: "AK",
+  umar: 21,
+  aur_sb: " SAB BDHIYA ",
 };
- 
-const promiseFive = new Promise(function(resolve, reject){
-    setTimeout(function(){
-        let error = false;
-        if(!error)
-        resolve(new_obj);
-        else
-        reject(' !! ERROR. REJECT CALLED ');
-    },1000)
-})
+
+const promiseFive = new Promise(function (resolve, reject) {
+  setTimeout(function () {
+    let error = false;
+    if (!error) resolve(new_obj);
+    else reject(" !! ERROR. REJECT CALLED ");
+  }, 1000);
+});
 /*
 
 //async await must be written with try catch block
@@ -52,12 +48,12 @@ getAllUsers();
 */
 
 fetch(url)
-.then(function(response){
+  .then(function (response) {
     return response.json();
-})
-.then(function(data){
+  })
+  .then(function (data) {
     console.log(data);
-})
-.catch((err)=>{
+  })
+  .catch((err) => {
     console.log(err);
-})
+  });
