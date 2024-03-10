@@ -14,6 +14,7 @@ const promiseFive = new Promise(function (resolve, reject) {
     else reject(" !! ERROR. REJECT CALLED ");
   }, 1000);
 });
+
 /*
 
 //async await must be written with try catch block
