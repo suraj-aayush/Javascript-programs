@@ -1,0 +1,19 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#edit-content {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#save-btn {
+    display: block;
+    margin-top: 10px;
+}
