@@ -21,7 +21,7 @@
     <form action="">
 
         <label for="image">Upload Image:</label>
-        <input type="file" id="image" name="image"><br><br> <!-- Add file input for uploading image -->
+        <input type="file" ><br><br> <!-- Add file input for uploading image -->
 
 
         <label>First Name</label>
@@ -30,24 +30,49 @@
         <label>Father's Name</label>
         <input type="text" placeholder="father's name"><br>
 
-        <input type="radio" id="option1" name="options">
-        <label for="option1">Option 1</label>
-        <input type="radio" id="option2" name="options">
-        <label for="option2">Option 2</label>
-        <input type="radio" id="option3" name="options">
-        <label for="option3">Option 3</label><br>
+        <label for="">SELECT SUBJECT</label>
+        <input type="radio" name="lang">
+        <label for="">eng</label>
+
+        <input type="radio" name="lang">
+        <label for="">hindi</label>
+
+        <input type="radio" name="lang">
+        <label for="">japanese</label> <br><br>
+
+
         <label>DOB</label>
         <input type="text" placeholder="dd/mm/yyyy">
 
         <label for="subjects">Choose a subject:</label>
-        <select>
-            <option value="math">Mathematics</option>
-            <option value="science">Science</option>
-            <option value="english">English</option>
-            <option value="history">History</option>
-            <!-- Add more options as needed -->
+        <select >
+            <option >ENGLISH PHD</option>
+            <option >NEPALI PHD</option>
+            <option >RUSSIAN PHD</option>
+            <option >HINDI PHD</option>
         </select>
 
+        <input type="date">
+        <br><br>
+        <input type="email" placeholder="xyz@mail.com">
+        <br><br>
+
+        <input type="range" min="0" max="100">
+
+        <ol>
+            <li><input type="checkbox" name="" id="">Red</li>
+            <li><input type="checkbox" name="" id="">Blue</li>
+            <li><input type="checkbox" name="" id="">Green</li>
+        </ol>
+
+        <map name="m1"> 
+            <area shape="rect" coords="x1,y1,x2,y2" alt="rect" href=""/>
+            <area shape="circle" coords="x,y,r" alt="circle" href=""/>
+            <area shape="poly" coords="x1,y1,x2,y2,x3,y3" alt="poly" href=""/>
+            <area shape="default" alt="default" href=""/>
+        </map>
+        
+            
 
         <button type="submit">SUBMIT</button>
     </form>

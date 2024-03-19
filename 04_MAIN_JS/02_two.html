@@ -11,20 +11,20 @@
         <div class="day">Wed</div>
         <div class="day">Thu</div>
     </div>
-
-    <script>
-        const parentt = document.querySelector('.parent');
-        console.log(parentt);   //  div class = "parent"
-        console.log(parentt.childElementCount);     // 4
-        console.log(parentt.children); // HTML COLLECTION -> 4
-        console.log(parentt.children[1].innerHTML); // Tue
-
-        console.log(" FOR LOOP BELOW ");
-        for(let i=0;i<parentt.children.length; i++)
-        {
-            console.log(parentt.children[i].innerHTML);
-        }
-    </script>
-
 </body>
+
+<script>
+    const parentt = document.querySelector('.parent');
+    console.log(parentt);   //  div class = "parent"
+    console.log(parentt.childElementCount);     // 4
+    console.log(parentt.children); // HTML COLLECTION -> 4
+    console.log(parentt.children[1].innerHTML); // Tue
+
+    console.log(" FOR LOOP BELOW ");
+    for(let i=0;i<parentt.children.length; i++)
+    {
+        console.log(parentt.children[i].innerHTML);
+    }
+</script>
+
 </html>
