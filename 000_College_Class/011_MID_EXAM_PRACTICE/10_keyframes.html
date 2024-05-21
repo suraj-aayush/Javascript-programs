@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEYFRAMES</title>
+
+    <style>
+        .whole{
+            width: 500px;
+            height: 500px;
+            /* display: flex; */
+            border: solid black 2px;
+            margin: auto;
+            position: relative;
+        }
+        .box{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            /* top: 400px;
+            left: 400px; */
+            animation: key1 3s infinite;
+            border-radius: 50%;
+        }
+
+        @keyframes key1 {
+            0%{
+                top:0px;
+                left:0;
+                /* background-color: aqua; */
+            }
+            25%{
+                top: 0px;
+                left:400px;
+                background-color: aqua;
+            }
+            50%{
+                top:400px;
+                left:400px;
+                background-color: azure;
+            }
+            75%{
+                top:400px;
+                left:0px;
+                background-color: blueviolet;
+            }
+            100%{
+                top:0px;
+                left:0px;
+                background-color: chartreuse;
+            }
+
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="whole">
+        <div class="box"></div>
+    </div>
+
+</body>
+</html>

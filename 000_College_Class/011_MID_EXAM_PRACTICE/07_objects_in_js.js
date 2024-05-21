@@ -42,3 +42,4 @@ console.log(year); // Output: Current year
 
 const dates = new Date();
 console.log(dates.toDateString());
+console.log(dates.toLocaleString());

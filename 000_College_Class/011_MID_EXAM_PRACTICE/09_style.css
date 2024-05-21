@@ -1,0 +1,24 @@
+h2{
+    color: red;
+    background-color: purple;
+}
+
+#id1{
+    color: black;
+}
+
+.class1{
+    color: cadetblue;
+}
+
+a:link{
+    color: rgb(190, 133, 59);
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    color: black;
+}

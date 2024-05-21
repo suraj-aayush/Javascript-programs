@@ -17,3 +17,4 @@ obj.name="suraj"
 console.log(obj.details.Pincode);
 
 console.log(obj);
+
